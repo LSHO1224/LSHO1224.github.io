@@ -2,23 +2,32 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
 }
 
 .profile-container {
     width: 80%;
     margin: auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-h1 {
-    color: #4CAF50;
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.6;
+header h1 {
+    margin: 0;
+}
+
+.introduction, .skills {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.introduction p, .skills p {
+    margin: 0 0 10px;
 }

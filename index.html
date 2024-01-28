@@ -3,30 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lee Sun-ho's Profile</title>
+    <title>Lee Sun-ho's Networking Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="profile-container">
-        <header>
-            <h1>Hi, I'm Lee Sun-ho!</h1>
-        </header>
-        <section class="introduction">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#network-basic">Network Basic</a></li>
+            <li><a href="#packettracer">PacketTracer</a></li>
+            <li><a href="#gns3">GNS3</a></li>
+            <li><a href="#sdn">SDN</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <section id="network-basic">
+            <h2>Network Basic</h2>
             <p>
-                I'm currently pursuing a degree in Information and Communications Engineering with an aim to become a network engineer. 
-                My academic and personal interests are deeply rooted in the public cloud, particularly AWS, and in broadening my understanding of Software-Defined Networking (SDN).
+                Explored the fundamentals of networking, focusing on concepts like TCP/IP, routing, and switching. This study laid the groundwork for understanding the architecture and operational principles of networks.
             </p>
+        </section>
+    
+        <section id="packettracer">
+            <h2>PacketTracer</h2>
             <p>
-                My technical skills include programming in languages like Go and Python. I find these skills incredibly useful in managing and optimizing server architectures. 
-                This aligns well with my interest in developing efficient systems for handling workloads and automation in both on-premises and cloud environments.
+                Utilized Cisco's PacketTracer for network simulation, creating various network scenarios for hands-on experimentation. This practice enhanced my network configuration and troubleshooting skills.
             </p>
+        </section>
+    
+        <section id="gns3">
+            <h2>GNS3</h2>
             <p>
-                Furthermore, I have a working knowledge of tools like Packet Tracer and GNS3, essential for network simulation and understanding complex network setups. 
-                These skills complement my certifications in Linux, SQL, and AWS Associate, allowing me to create more integrated and effective network solutions. 
-                My ability to utilize a variety of AWS services is also a testament to my commitment to stay abreast with the latest in cloud technology, ensuring a holistic approach to network engineering.
+                Learned to build and manage more complex network environments using GNS3. Experiencing network configurations in a realistic setting bridged the gap between theoretical knowledge and practical application.
+            </p>
+        </section>
+    
+        <section id="sdn">
+            <h2>SDN</h2>
+            <p>
+                Delved deeply into Software-Defined Networking (SDN), understanding how it enhances network flexibility and efficiency. Keeping up with the latest trends and technologies in SDN, I expanded my knowledge in this transformative field.
             </p>
         </section>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.sidebar a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+        
+    </script>
 </body>
 </html>

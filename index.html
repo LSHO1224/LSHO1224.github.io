@@ -1,41 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunho's github blog</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="sidebar">
-        <ul>
-            <li><a href="#network-basic">PublicCloud</a></li>
-            <li><a href="#sdn">SDN</a></li>
-        </ul>
-    </div>
-
-    <div class="content">
-        <section id="publiccloud">
-            <h2>PublicCloud</h2>
-        </section>
-        <section id="sdn">
-            <h2>SDN</h2>
-        </section>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.sidebar a').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    document.querySelector(targetId).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-        
-    </script>
-</body>
-</html>
+---
+layout: home
+# Index page
+---

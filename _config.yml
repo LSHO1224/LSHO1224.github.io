@@ -1,6 +1,4 @@
-# The Site Configuration
-include:
- - _javascript
+
 # Import the theme
 theme: jekyll-theme-chirpy
 

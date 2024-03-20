@@ -1,4 +1,3 @@
-
 # Import the theme
 theme: jekyll-theme-chirpy
 
@@ -29,10 +28,10 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Sunho
+  email: leesunho5160@gmail.com # change to your email address
   links:
-    - https://github.com/username # change to your github homepage
+    - https://github.com/LSH01224 # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
